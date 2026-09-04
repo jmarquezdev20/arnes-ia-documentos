@@ -1,0 +1,36 @@
+{
+  "proyecto": "Arnés IA para documentos — plantilla",
+  "como_empezar": "Pon tus documentos (PDF, .txt, .md, .docx…) en la carpeta documentos/ y sustituye estas tareas de ejemplo por las tuyas. Luego abre Claude Code y pídele 'implementa la siguiente tarea pendiente', o háblale en lenguaje natural ('hazme un índice de los documentos').",
+  "features": [
+    {
+      "id": "T1",
+      "titulo": "Crear un índice de los documentos",
+      "estado": "pending",
+      "criterios": [
+        "INDICE.md (en la raíz) lista cada documento de documentos/ con su título y una línea de qué trata",
+        "no falta ningún documento de la carpeta documentos/",
+        "la información sale de los documentos reales, sin inventar nada"
+      ]
+    },
+    {
+      "id": "T2",
+      "titulo": "Rellenar una tabla resumen",
+      "estado": "pending",
+      "criterios": [
+        "resumen-tabla.md (en la raíz) recoge, por cada documento, su idea o hallazgo principal en una fila",
+        "cada dato sale del documento correspondiente (nada inventado)",
+        "no se modifican ni borran los documentos originales de documentos/"
+      ]
+    },
+    {
+      "id": "T3",
+      "titulo": "Escribir un resumen global",
+      "estado": "pending",
+      "criterios": [
+        "resumen-global.md (en la raíz) reúne las ideas comunes de todos los documentos",
+        "menciona explícitamente puntos de acuerdo y de discrepancia entre ellos",
+        "toda afirmación está respaldada por al menos un documento de documentos/ (se cita por su nombre)"
+      ]
+    }
+  ]
+}
